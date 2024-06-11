@@ -4,6 +4,7 @@ PACKAGE_SRC="https://github.com/mikebrady/alac/archive/${PACKAGE_VERSION}.tar.gz
 PACKAGE_DEPENDS="glibc"
 
 preconfigure_package() {
+        touch README
 	autoreconf -fi
 }
 
